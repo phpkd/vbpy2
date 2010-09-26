@@ -37,7 +37,6 @@
 	     [*]Professionally Coded.
 	     [*]Detailed Documentation.
 	     [*]Zero Additional Queries.
-	     [*]Requires NO manual edits.
 	     [*]Does NOT break any default vBulletin functionality -Fully vBulletin Compatible-.
 	[/LIST]
      [*][U][B]Specific Features:-[/B][/U]
