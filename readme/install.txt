@@ -68,4 +68,4 @@ PHPKD - Paypal Payment API #2 -- Installation Procedure:
 Brought to you by PHP KingDom (www.phpkd.net)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$Version: 4.0.100 $ - $Id: install.txt 5 2010-09-24 05:10:03Z PHPKD $
+$Version: 4.0.100 $ - $Id$

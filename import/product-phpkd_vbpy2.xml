@@ -5,9 +5,9 @@
 	<description><![CDATA[This product adds additional paypal payment API completely separate from the default one, with it's own settings and it's own processing.]]></description>
 	<version><![CDATA[4.0.100]]></version>
 	<vendor><![CDATA[$Vendor: PHP KingDom $]]></vendor>
-	<author><![CDATA[$Author: PHPKD $]]></author>
-	<revision><![CDATA[$Revision: 4 $]]></revision>
-	<released><![CDATA[$Date: 2010-09-24 07:14:40 +0300 (Fri, 24 Sep 2010) $]]></released>
+	<author><![CDATA[$Author$]]></author>
+	<revision><![CDATA[$Revision$]]></revision>
+	<released><![CDATA[$Date$]]></released>
 	<url><![CDATA[http://tools.phpkd.net/en/producthelp/url/vbpy2/]]></url>
 	<versioncheckurl><![CDATA[http://tools.phpkd.net/en/producthelp/version/vbpy2/]]></versioncheckurl>
 	<extradetails><![CDATA[http://tools.phpkd.net/en/producthelp/info/vbpy2/]]></extradetails>
