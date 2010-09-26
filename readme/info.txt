@@ -131,7 +131,8 @@ History:
      * v4.0.100 26/09/2010 10:00 AM UTC: First 4.0.x release (public)
 	+ Recoded from scratch.
 	+ Fully compatible with vBulletin 4.0.x.
-
+	+ Bug fix: transaction log now recorded correctly.
+	+ Added missing features to make it 100% standalone.
 
 Screen Shots:
 ~~~~~~~~~~~~~~

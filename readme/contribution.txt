@@ -171,6 +171,8 @@ This is a human-readable summary of the Legal Code (the full license).
      [LIST=1]
      [*]Recoded from scratch.
      [*]Fully compatible with vBulletin 4.0.x.
+     [*]Bug fix: transaction log now recorded correctly.
+     [*]Added missing features to make it 100% standalone.
      [/LIST]
 [/LIST]
 
