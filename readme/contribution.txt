@@ -165,7 +165,7 @@ This is a human-readable summary of the Legal Code (the full license).
 [LIST]
      [*][B]v1.0.0[/B] 24/09/2008 10:00 AM UTC: First 3.7.x release (private)
      [*][B]v3.7.100, v3.8.100[/B] 13/04/2009 08:00 PM UTC: First initial public release.
-     [*][B]v3.7.101, v3.8.101[/B] 14/04/2009 10:00 AM GMT: Fixing minor bug in the "uninstall code".
+     [*][B]v3.7.101, v3.8.101[/B] 14/04/2009 10:00 AM UTC: Fixing minor bug in the "uninstall code".
      [*][B]v4.0.100[/B] 26/09/2010 10:00 AM UTC: First 4.0.x release (public)
      [LIST=1]
      [*]Recoded from scratch.
