@@ -56,9 +56,58 @@ Installation Procedure:
 	     paymentapi
 	          class_paypal2.php
 
-     2. Import the product's XML file "product-phpkd_vbpy2.xml" from AdminCP.
+     2. Do the following small manual edit(s), open the file "includes/subscriptions.php" and:
+	     Search for:
+-------------------------------------------------
+=================================================
+	print_select_row($vbphrase['shipping_address'], 'shipping', array(0 => $vbphrase['none'], 2 => $vbphrase['optional'], 4 => $vbphrase['required']), ($sub['options'] & $subobj->_SUBSCRIPTIONOPTIONS['shipping1']) + ($sub['options'] & $subobj->_SUBSCRIPTIONOPTIONS['shipping2']));
+=================================================
+-------------------------------------------------
 
-     3. You're Done :).
+	     Add under it directly the following code:
+-------------------------------------------------
+=================================================
+	// PHPKD - Paypal Payment API #2
+	print_table_header($vbphrase['paypal2_only']);
+	$sub2 = convert_bits_to_array($sub['options2'], $subobj->_SUBSCRIPTIONOPTIONS);
+	print_yes_no_row($vbphrase['tax'], 'options2[tax]', $sub2['tax']);
+	print_select_row($vbphrase['shipping_address'], 'shipping2', array(0 => $vbphrase['none'], 2 => $vbphrase['optional'], 4 => $vbphrase['required']), ($sub['options2'] & $subobj->_SUBSCRIPTIONOPTIONS['shipping1']) + ($sub['options2'] & $subobj->_SUBSCRIPTIONOPTIONS['shipping2']));
+=================================================
+-------------------------------------------------
+
+
+	     Search for:
+-------------------------------------------------
+=================================================
+	$sub['displayorder'] = intval($sub['displayorder']);
+=================================================
+-------------------------------------------------
+
+	     Add under it directly the following code:
+-------------------------------------------------
+=================================================
+	// PHPKD - Paypal Payment API #2
+	$vbulletin->input->clean_array_gpc('p', array('options2' => TYPE_ARRAY_UINT, 'shipping2' => TYPE_UINT));
+
+	if ($vbulletin->GPC['shipping2'] == 2)
+	{
+		$vbulletin->GPC['options2']['shipping1'] = 1;
+	}
+	else if ($vbulletin->GPC['shipping2'] == 4)
+	{
+		$vbulletin->GPC['options2']['shipping2'] = 1;
+	}
+
+	$vbulletin->GPC['sub']['options2'] = convert_array_to_bits($vbulletin->GPC['options2'], $subobj->_SUBSCRIPTIONOPTIONS);
+=================================================
+-------------------------------------------------
+
+	     Save the modified file "includes/subscriptions.php" and upload it to it's place again (ALLOW OVERWRITE).
+
+
+     3. Import the product's XML file "product-phpkd_vbpy2.xml" from AdminCP.
+
+     4. You're Done :).
 
 
 Upgrade Procedure:
