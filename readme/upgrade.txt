@@ -6,7 +6,6 @@ Brought to you by PHP KingDom (www.phpkd.net)
 PHPKD - Paypal Payment API #2 -- Upgrade Procedure:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
      1. Upload required files to their appropriate places (ALLOW OVERWRITE):
-     1. Upload required files to their appropriate places:
 	includes
 	     paymentapi
 	          class_paypal2.php
