@@ -6,7 +6,7 @@
 
 
 [B]Name:[/B] PHPKD - Paypal Payment API #2
-[B]Version:[/B] 4.0.100
+[B]Version:[/B] 4.0.101
 
 [B]Description:[/B] This product adds additional paypal payment API completely separate from the default one, with it's own settings and it's own processing.
 
@@ -172,6 +172,10 @@ This is a human-readable summary of the Legal Code (the full license).
      [*]Fully compatible with vBulletin 4.0.x.
      [*]Bug fix: transaction log now recorded correctly.
      [*]Added missing features to make it 100% standalone.
+     [/LIST]
+     [*][B]v4.0.101[/B] 28/09/2010 10:00 AM UTC: Maintenance release (public)
+     [LIST=1]
+     [*]Fixed minor bug in installation code.
      [/LIST]
 [/LIST]
 
